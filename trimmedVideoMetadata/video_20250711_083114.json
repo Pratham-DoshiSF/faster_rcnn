@@ -1,0 +1,134 @@
+[
+    {
+        "original_frame": 387,
+        "timestamp": 12.9,
+        "motion_score": 23587106,
+        "output_frame": 0
+    },
+    {
+        "original_frame": 388,
+        "timestamp": 12.933,
+        "motion_score": 21305453,
+        "output_frame": 1
+    },
+    {
+        "original_frame": 710,
+        "timestamp": 23.667,
+        "motion_score": 20026945,
+        "output_frame": 2
+    },
+    {
+        "original_frame": 1237,
+        "timestamp": 41.233,
+        "motion_score": 25328033,
+        "output_frame": 3
+    },
+    {
+        "original_frame": 1723,
+        "timestamp": 57.433,
+        "motion_score": 20473974,
+        "output_frame": 4
+    },
+    {
+        "original_frame": 2226,
+        "timestamp": 74.2,
+        "motion_score": 20582602,
+        "output_frame": 5
+    },
+    {
+        "original_frame": 2227,
+        "timestamp": 74.233,
+        "motion_score": 21325540,
+        "output_frame": 6
+    },
+    {
+        "original_frame": 2228,
+        "timestamp": 74.267,
+        "motion_score": 21848423,
+        "output_frame": 7
+    },
+    {
+        "original_frame": 2243,
+        "timestamp": 74.767,
+        "motion_score": 23991122,
+        "output_frame": 8
+    },
+    {
+        "original_frame": 2244,
+        "timestamp": 74.8,
+        "motion_score": 20132280,
+        "output_frame": 9
+    },
+    {
+        "original_frame": 2259,
+        "timestamp": 75.3,
+        "motion_score": 22311325,
+        "output_frame": 10
+    },
+    {
+        "original_frame": 2260,
+        "timestamp": 75.333,
+        "motion_score": 25915780,
+        "output_frame": 11
+    },
+    {
+        "original_frame": 2261,
+        "timestamp": 75.367,
+        "motion_score": 24364996,
+        "output_frame": 12
+    },
+    {
+        "original_frame": 2262,
+        "timestamp": 75.4,
+        "motion_score": 21399312,
+        "output_frame": 13
+    },
+    {
+        "original_frame": 2269,
+        "timestamp": 75.633,
+        "motion_score": 28462897,
+        "output_frame": 14
+    },
+    {
+        "original_frame": 2270,
+        "timestamp": 75.667,
+        "motion_score": 21388655,
+        "output_frame": 15
+    },
+    {
+        "original_frame": 2282,
+        "timestamp": 76.067,
+        "motion_score": 24453661,
+        "output_frame": 16
+    },
+    {
+        "original_frame": 2288,
+        "timestamp": 76.267,
+        "motion_score": 22469716,
+        "output_frame": 17
+    },
+    {
+        "original_frame": 3276,
+        "timestamp": 109.2,
+        "motion_score": 27561602,
+        "output_frame": 18
+    },
+    {
+        "original_frame": 3277,
+        "timestamp": 109.233,
+        "motion_score": 31999008,
+        "output_frame": 19
+    },
+    {
+        "original_frame": 3286,
+        "timestamp": 109.533,
+        "motion_score": 34473558,
+        "output_frame": 20
+    },
+    {
+        "original_frame": 3287,
+        "timestamp": 109.567,
+        "motion_score": 33739379,
+        "output_frame": 21
+    }
+]

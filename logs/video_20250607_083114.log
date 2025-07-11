@@ -1,0 +1,16 @@
+2025-07-11 17:41:08.973617 - Processing started for video: temm_video/video_20250607_083114.mp4
+2025-07-11 17:41:32.633346 - Trimmed video saved: trimmedVideo/video_20250607_083114.avi
+2025-07-11 17:41:32.633382 - Metadata saved: trimmedVideoMetadata/video_20250607_083114.json
+2025-07-11 17:41:32.633410 - Processing completed in 23.66 seconds
+2025-07-11 17:41:32.633435 - Original Frames: 3594, Trimmed Frames: 58
+2025-07-11 17:41:32.633459 - Video Duration: 119.80 seconds
+2025-07-11 17:41:32.633482 - ------------------------------------------------------------
+2025-07-11 19:03:44.308411 - Processing started for video: temm_video/video_20250607_083114.mp4
+2025-07-11 19:03:44.337749 - Error parsing ROI coordinates: 'tuple' object has no attribute 'strip'
+2025-07-11 19:05:52.269828 - Processing started for video: temm_video/video_20250607_083114.mp4
+2025-07-11 19:06:21.585504 - Trimmed video saved: trimmedVideo/video_20250607_083114.avi
+2025-07-11 19:06:21.585553 - Metadata saved: trimmedVideoMetadata/video_20250607_083114.json
+2025-07-11 19:06:21.585613 - Processing completed in 29.41 seconds
+2025-07-11 19:06:21.585641 - Original Frames: 3594, Trimmed Frames: 23
+2025-07-11 19:06:21.585668 - Video Duration: 119.80 seconds
+2025-07-11 19:06:21.585692 - ------------------------------------------------------------
