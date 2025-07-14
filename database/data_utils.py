@@ -42,8 +42,6 @@ def create_table():
         cursor.close()
         conn.close()
 
-
-
 def insert_cordinates(customer_id, location_id, roi_points):
     if len(roi_points) != 4:
         raise ValueError("roi_points must contain exactly 4 coordinate pairs.")
