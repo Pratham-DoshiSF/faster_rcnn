@@ -3,7 +3,7 @@ import numpy as np
 import json
 import os
 from datetime import datetime
-from database.data_utils import fetch_cordinates
+from utils_function.data_utils import database_function
 
 TRIM_VIDEO_PATH = "trimmed_video/"
 TRIM_VIDEO_METADATA_PATH = "trimmed_video_metadata/"
@@ -16,7 +16,7 @@ for folder in [TRIM_VIDEO_PATH, TRIM_VIDEO_METADATA_PATH, LOG_PATH]:
 
 class motion_extractor():
     def __init__(self):
-        pass
+        self.database_obj = database_function()
 
     def write_log(self ,log_file, message):
         with open(log_file, "a") as f:
@@ -26,7 +26,7 @@ class motion_extractor():
         self.start_time = datetime.now()
         self.video_name = os.path.splitext(os.path.basename(path))[0]
         self.log_file = os.path.join(LOG_PATH, f"{self.video_name}.log")
-        self.roi_points = fetch_cordinates(customer_id, location_id)
+        self.roi_points = self.database_obj.fetch_cordinates(customer_id, location_id)
         self.write_log(self.log_file, f"Processing started for video: {path}")
 
         cap = cv2.VideoCapture(path)

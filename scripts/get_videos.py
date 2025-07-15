@@ -15,6 +15,7 @@ class video_extractor():
         self.CUSTOMER_ID = customer_id
         self.LOCATION_ID = location_id
         self.DOWNLOAD_OBJECT_KEY = f"abc/{self.CUSTOMER_ID}/{self.LOCATION_ID}"
+        self.motion_extractor_obj = motion_extractor()
         self.setup()
         
     def setup(self):
@@ -33,7 +34,7 @@ class video_extractor():
                         Key=obj.key
                 )
 
-                trimmed_video_path = motion_extractor().process_video(self.CUSTOMER_ID,self.LOCATION_ID ,download_location)
+                trimmed_video_path = self.motion_extractor_obj.process_video(self.CUSTOMER_ID,self.LOCATION_ID ,download_location)
 
                 if os.path.exists(trimmed_video_path):
                     os.remove(download_location)
