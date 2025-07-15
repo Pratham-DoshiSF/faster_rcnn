@@ -1,6 +1,7 @@
 import os
-from utils_function.s3_utils import s3_setup
 from dotenv import load_dotenv
+
+from utils_function.s3_utils import s3_setup
 from scripts.motion_detector import motion_extractor
 
 
@@ -9,20 +10,18 @@ TEMPORY_PATH = "temm_video"
 BUCKET_NAME = "testing-cvat-load"
 os.makedirs(TEMPORY_PATH, exist_ok=True)
 
-
 class video_extractor():
-    def __init__(self , customer_id , location_id ):
+    def __init__(self , customer_id  ):
         self.CUSTOMER_ID = customer_id
-        self.LOCATION_ID = location_id
-        self.DOWNLOAD_OBJECT_KEY = f"abc/{self.CUSTOMER_ID}/{self.LOCATION_ID}"
+        self.DOWNLOAD_OBJECT_KEY = f"abc/{self.CUSTOMER_ID}"
         self.motion_extractor_obj = motion_extractor()
         self.setup()
         
     def setup(self):
         self.s3 , self.s3_client = s3_setup().get_s3()
 
-    def process_videos(self , VIDEO_DATE):
-        self.DOWNLOAD_OBJECT_KEY = f"{self.DOWNLOAD_OBJECT_KEY}/{VIDEO_DATE}"
+    def process_videos(self ,LOCATION_ID, VIDEO_DATE):
+        self.DOWNLOAD_OBJECT_KEY = f"{self.DOWNLOAD_OBJECT_KEY}/{LOCATION_ID}/{VIDEO_DATE}"
         for obj in self.s3.Bucket(BUCKET_NAME).objects.filter(Prefix = self.DOWNLOAD_OBJECT_KEY):
             path, filename = os.path.split(obj.key)
             if VIDEO_DATE in filename:
